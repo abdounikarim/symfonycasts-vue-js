@@ -1,7 +1,7 @@
-<style lang="scss">
+<style lang="scss" module>
 @import '../../scss/components/light-component';
 
-.sidebar{
+.sidebar {
     @include light-component;
 
     ul {
@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="row">
             <aside class="col-xs-12 col-3">
-                <div class="sidebar p-3 mb-5">
+                <div :class="[$style.sidebar, 'mb-5', 'p-3']">
                     <h5 class="text-center">
                         Categories
                     </h5>
