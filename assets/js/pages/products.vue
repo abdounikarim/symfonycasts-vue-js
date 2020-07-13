@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <legend-component title="TODO" />
+                    <legend-component :title="legend" />
                 </div>
             </div>
         </div>
