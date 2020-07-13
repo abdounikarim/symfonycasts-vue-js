@@ -57,7 +57,7 @@
                 </div>
                 <div class="row">
                     <span class="p-3">
-                        Shipping takes 10-12 weeks, and products probably won't work
+                        {{ legend }}
                     </span>
                 </div>
             </div>
@@ -70,7 +70,7 @@ export default {
     name: 'Products',
     data() {
         return {
-            firstName: 'Karim',
+            legend: 'Shipping takes 10-12 weeks, and products probably won\'t work',
         };
     },
 };
