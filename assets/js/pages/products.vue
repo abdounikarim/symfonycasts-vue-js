@@ -56,9 +56,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <span class="p-3">
-                        {{ legend }}
-                    </span>
+                    <legend-component />
                 </div>
             </div>
         </div>
@@ -66,8 +64,13 @@
 </template>
 
 <script>
+import LegendComponent from '../components/legend';
+
 export default {
     name: 'Products',
+    components: {
+        LegendComponent,
+    },
     data() {
         return {
             legend: 'Shipping takes 10-12 weeks, and products probably won\'t work',
