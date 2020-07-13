@@ -87,4 +87,9 @@ Encore
     //.addEntry('admin', './assets/js/admin.js')
 ;
 
+//Options to update CSS dynamically via Hot Module Replacement
+if (!Encore.isProduction()) {
+    Encore.disableCssExtraction();
+}
+
 module.exports = Encore.getWebpackConfig();
