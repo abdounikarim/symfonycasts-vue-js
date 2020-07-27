@@ -69,6 +69,15 @@ export default {
             ],
         };
     },
+    created() {
+        console.log(this);
+    },
+    props: {
+        testProp: {
+            type: String,
+            default: 'Hello',
+        },
+    },
     methods: {
         toggleCollapsed() {
             this.collapsed = !this.collapsed;
